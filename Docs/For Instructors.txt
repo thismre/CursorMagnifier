@@ -1,0 +1,41 @@
+CursorMagnifier – For Instructors
+---------------------------------
+
+Purpose:
+CursorMagnifier provides a clear, stable magnified view of the area around the
+mouse cursor during demonstrations. It is designed for classroom, remote, and
+recorded instruction where students need to see small UI elements clearly.
+
+How to Launch:
+    • Double‑click CursorMagnifier.exe to run normally.
+    • Use “CursorMagnifier (Admin)” to enable scroll‑through inside elevated
+      applications such as installers or system tools.
+
+Basic Controls:
+    • The magnified view initially appears in the lower‑right corner of the active monitor.
+      The active monitor is the monitor in which the mouse cursor exists upon app launch.
+    • If the cursor approaches the magnified view, it automatically moves to the opposite corner.
+    • Hold Ctrl and scroll the mouse wheel to zoom in or out.
+    • Press F8 to close the magnifier.
+
+What Students Will See:
+    • A magnified circular view anchored to a corner of the screen.
+    • The magnifier relocates to another corner if the cursor gets too close.
+    • On multi‑monitor setups, the magnifier transitions smoothly to the corresponding
+      corner of the monitor the cursor moves onto.
+
+Tips for Classroom Use:
+    • Use the Admin shortcut when demonstrating system utilities.
+    • Adjust zoom smoothly with Ctrl + scroll to maintain clarity.
+    • Keep the cursor moving steadily so students can track what is being magnified.
+    • Be aware of corner placement so the magnifier does not obscure the UI element
+      you are explaining.
+
+Troubleshooting During Class:
+    • If scrolling does not zoom, ensure Ctrl is held.
+    • If scroll‑through stops working, switch to the Admin shortcut.
+    • If the magnifier appears offset, move the cursor briefly to resync corner placement.
+
+Summary:
+CursorMagnifier is a lightweight, instructor‑focused tool that improves visibility
+during demonstrations. Launch it, zoom with Ctrl + scroll, and close it using F8.

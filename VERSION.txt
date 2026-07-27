@@ -1,0 +1,9 @@
+CursorMagnifier
+Version 2.0.0
+Release Date: 2026-07-26
+
+This version includes:
+    • Updated circular reticle ring (5px, increased transparency)
+    • Stable capture logic without offset adjustments
+    • Verified Run-as-Administrator scroll-through behavior
+    • Updated documentation and distribution structure

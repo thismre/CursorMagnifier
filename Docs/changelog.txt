@@ -1,0 +1,64 @@
+CursorMagnifier – Changelog
+---------------------------
+
+Version 2.0.0
+    • Reworked reticle to a true circular ring for improved visual clarity.
+    • Ring thickness standardized at 5px for consistent appearance.
+    • Increased ring transparency for reduced visual dominance.
+    • Removed experimental offset-based capture logic for stability.
+    • Restored classic capture behavior with predictable cursor centering.
+    • Verified full scroll-through support when launched as administrator.
+    • Updated distribution folder contents and documentation.
+
+Version 1.9.0
+    • Final instructor edition polish.
+    • Cleaned animation timing for reticle pulse.
+    • Improved magnifier responsiveness under rapid cursor movement.
+    • Updated internal exception handling for stability.
+    • Prepared distribution folder structure for instructor sharing.
+
+Version 1.8.0
+    • Added configuration support via App.config.
+    • Introduced adjustable zoom limits and reticle pulse intensity.
+    • Improved compatibility with Windows 10 and Windows 11.
+
+Version 1.7.0
+    • Improved magnifier edge smoothing.
+    • Reduced aliasing on circular magnifier border.
+    • Updated GDI+ sampling for clearer text at mid-range zoom levels.
+
+Version 1.6.0
+    • Implemented cursor override to prevent I-beam, resize, busy, and
+      other distracting cursor shapes during instruction.
+    • Cursor override now activates automatically when magnifier is active.
+
+Version 1.5.0
+    • Added toast notifications for mode changes.
+    • Notifications fade smoothly and do not obstruct the magnifier.
+    • Updated font rendering for notification clarity.
+
+Version 1.4.0
+    • Added drop-shadow magnifier ring for separation from background.
+    • Enhanced DPI scaling for high-resolution displays.
+    • Improved zoom interpolation for smoother transitions.
+
+Version 1.3.0
+    • Implemented adaptive dual-contrast reticle.
+    • Reticle now auto-adjusts based on sampled background brightness.
+    • Improved clarity on mixed-lighting content.
+
+Version 1.2.0
+    • Introduced pulse-animated reticle for cursor focus.
+    • Added glow halo for improved visibility on bright backgrounds.
+    • Updated rendering pipeline for smoother animation.
+
+Version 1.1.0
+    • Added scroll-wheel zoom control.
+    • Improved magnifier rendering performance.
+    • Reduced flicker during rapid cursor movement.
+
+Version 1.0.0
+    • Initial release of CursorMagnifier.
+    • Basic magnifier window following the cursor.
+    • Fixed-size zoom window with static magnification.
+    • Basic WinForms implementation.

@@ -1,0 +1,17 @@
+CursorMagnifier – Support Information
+-------------------------------------
+
+If you encounter issues, unexpected behavior, or visual anomalies while
+using CursorMagnifier, please contact:
+
+    Mark J.
+    Instructor Tools Development
+    Email: (provide your preferred contact method)
+
+Please include the following information when reporting a problem:
+    • Windows version (Windows 10 or Windows 11)
+    • CursorMagnifier version (see VERSION.txt)
+    • Whether you were running “Run CursorMagnifier (Admin).lnk”
+    • A brief description of what you were doing when the issue occurred
+
+Providing this information helps ensure accurate troubleshooting and faster resolution.

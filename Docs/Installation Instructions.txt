@@ -1,0 +1,51 @@
+CursorMagnifier – Installation Instructions
+-------------------------------------------
+
+Overview:
+CursorMagnifier is a portable application. It does not require installation,
+modification of system files, or administrative setup. Simply extract the ZIP
+and run the executable.
+
+Extracting the Distribution:
+    • Right‑click the ZIP file and choose “Extract All…”
+    • Extract the contents to a folder where you have read/write access.
+    • Keep all files together; do not separate the EXE, config file, or shortcuts.
+
+Files Included:
+    • CursorMagnifier.exe
+    • CursorMagnifier.exe.config
+    • Run CursorMagnifier (Admin).lnk
+    • VERSION.txt
+    • Docs folder containing documentation and support materials
+
+Launching the Application:
+    • Double‑click CursorMagnifier.exe to run normally.
+    • Use “Run CursorMagnifier (Admin)” when demonstrating elevated tools such as
+      installers, system utilities, or administrative consoles.
+
+Initial Behavior:
+    • The magnified view initially appears in the lower‑right corner of the active monitor.
+      The active monitor is the monitor in which the mouse cursor exists upon app launch.
+    • If the cursor approaches the magnified view, it will automatically move to the
+      opposite corner to avoid overlap.
+
+Multi‑Monitor Behavior:
+    • CursorMagnifier automatically transitions to the corresponding corner of the
+      monitor the cursor moves onto.
+    • No configuration is required; transitions are seamless.
+
+Zoom and Controls:
+    • Hold Ctrl and scroll the mouse wheel to zoom in or out.
+    • Press F8 to close the magnifier.
+
+Running in Administrative Mode:
+    • Some elevated applications block standard input hooks.
+    • Use the “Run CursorMagnifier (Admin)” shortcut to enable scroll‑through in these cases.
+    • Administrative mode is only required when interacting with elevated windows.
+
+No Installation Required:
+    • CursorMagnifier does not modify registry settings.
+    • No system services or background processes are installed.
+    • The application can be deleted simply by removing its folder.
+
+If you encounter issues, refer to Troubleshooting.txt or Support.txt.

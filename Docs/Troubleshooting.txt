@@ -1,0 +1,38 @@
+CursorMagnifier – Troubleshooting Guide
+---------------------------------------
+
+Magnifier does not scroll through elevated windows:
+    • Launch using the “CursorMagnifier (Admin)” shortcut.
+    • Scroll‑through requires Administrator elevation for certain system tools.
+
+Magnifier relocates unexpectedly:
+    • The magnified view moves to the opposite corner when the cursor gets too close.
+    • This is intentional behavior to prevent the cursor from being obscured.
+
+Magnifier appears slightly offset from expected corner:
+    • Extremely rapid cursor movement can cause a one‑frame delay in corner repositioning.
+    • The next capture frame will correct the placement automatically.
+
+Magnifier transitions oddly between monitors:
+    • On multi‑monitor setups, the magnifier re‑anchors to the corresponding corner
+      of the monitor the cursor moves onto.
+    • If the transition feels abrupt, move the cursor briefly to allow the magnifier
+      to settle into the correct corner.
+
+Reticle looks thicker or thinner on different monitors:
+    • Mixed‑DPI multi‑monitor setups may cause slight GDI+ rounding differences.
+    • This is normal and does not affect functionality.
+
+Magnifier flickers when other overlay tools are active:
+    • Windows Magnifier or third‑party overlays may interfere with the WH_MOUSE_LL hook.
+    • Close other overlay tools and try again.
+
+Zoom feels slow or unresponsive:
+    • Ensure Ctrl is held while scrolling.
+    • Some touchpads send non‑standard scroll events; use a mouse wheel if possible.
+
+Banner text looks blurry:
+    • This can occur briefly on very high‑DPI displays.
+    • Windows will correct this after a few frames or when the magnifier moves.
+
+If issues persist, refer to Support.txt for contact information.

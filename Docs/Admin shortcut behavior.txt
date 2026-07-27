@@ -1,0 +1,41 @@
+CursorMagnifier – Shortcut Behavior Notes
+-----------------------------------------
+
+Overview:
+CursorMagnifier includes a shortcut named “CursorMagnifier (Admin).lnk” that
+launches the application with elevated privileges. This shortcut is placed in
+the same folder as CursorMagnifier.exe to ensure reliable behavior when the
+distribution ZIP is extracted by instructors or students.
+
+How Windows Shortcuts Resolve Their Targets:
+A Windows .lnk file stores both an absolute path and a relative reference to
+its target. When the shortcut and the executable are located in the same
+folder, Windows uses the relative reference first. This allows the shortcut
+to continue working even after the folder is moved or extracted from a ZIP.
+
+Behavior After Extracting the ZIP:
+When the distribution ZIP is extracted normally (using Windows Explorer or
+any standard ZIP tool), the shortcut will correctly locate CursorMagnifier.exe
+as long as:
+    • The shortcut remains in the same folder as the executable.
+    • The executable name is not changed.
+    • The folder structure is not altered.
+
+When the Shortcut May Fail:
+The shortcut may stop working if:
+    • It is moved out of the folder containing CursorMagnifier.exe.
+    • The executable is renamed or relocated.
+    • The ZIP is extracted in a way that changes the folder hierarchy.
+    • The shortcut is run directly from inside the ZIP without extraction.
+
+Recommended Distribution Practice:
+To ensure consistent behavior:
+    • Keep CursorMagnifier.exe and “CursorMagnifier (Admin).lnk” together.
+    • Do not place the shortcut inside a Docs subfolder.
+    • Instructors should extract the ZIP fully before running the shortcut.
+
+Summary:
+The included admin shortcut is reliable and will function correctly for all
+users who extract the ZIP normally and keep the shortcut next to the EXE.
+This provides a simple, predictable way to launch CursorMagnifier with
+administrator privileges when needed.

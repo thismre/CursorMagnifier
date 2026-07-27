@@ -1,0 +1,127 @@
+CursorMagnifier – Developer Deeper Dive
+---------------------------------------
+
+Project Overview:
+CursorMagnifier is a Windows Forms application targeting .NET Framework 4.7.2.
+It provides a stable, instructor-focused magnification window that follows the
+cursor, supports smooth zooming, and maintains high visibility through an
+adaptive reticle and instructional banner. The codebase is intentionally
+minimal, dependency-free, and optimized for predictable behavior during live
+instruction.
+
+---------------------------------------
+Architecture Overview
+---------------------------------------
+
+Primary Components:
+    • Program.cs
+      Standard WinForms entry point. Initializes the application and launches
+      the overlay form.
+
+    • OverlayForm.cs
+      The core of the application. Handles rendering, capture logic, movement
+      logic, reticle drawing, banner drawing, and WH_MOUSE_LL hook management.
+
+Rendering Pipeline:
+    • Capture performed using CopyFromScreen into an off-screen bitmap.
+    • Timer-driven update loop at 16ms ensures smooth motion and consistent
+      frame pacing.
+    • Double-buffered drawing reduces flicker and improves clarity.
+    • Magnifier content is rendered into a dedicated bitmap before display.
+
+Movement System:
+    • DangerRadius determines when the magnifier must relocate to avoid
+      covering the cursor.
+    • SlideFactor controls normal movement speed.
+    • EmergencySlideFactor accelerates movement when the cursor approaches
+      the magnifier too quickly.
+    • Docking logic positions the magnifier to the left or right of the cursor
+      depending on available screen space.
+
+Reticle System:
+    • Circular ring with 5px thickness and increased transparency.
+    • Dynamic core color determined by luminance sampling of the captured
+      region.
+    • Crosshair lines drawn at the center for precise cursor focus.
+    • Reticle remains visually stable across zoom levels.
+
+Zoom System:
+    • Ctrl + Scroll adjusts magnification.
+    • Zoom factor clamped between MIN_MAG and MAX_MAG.
+    • Capture size recalculated based on current zoom level.
+    • Smooth interpolation avoids abrupt jumps in magnification.
+
+Mouse Hook:
+    • WH_MOUSE_LL intercepts scroll events globally.
+    • Scroll-through behavior forwarded to underlying windows.
+    • When running as administrator, scroll-through works inside elevated
+      applications such as installers and system consoles.
+
+Banner System:
+    • Displays exit key, zoom instructions, current zoom level, and admin
+      status.
+    • Semi-transparent rounded rectangle improves readability.
+    • Uses Segoe UI for consistent instructor-friendly typography.
+
+---------------------------------------
+Design Decisions
+---------------------------------------
+
+Why Windows Forms:
+    • Predictable rendering behavior.
+    • Minimal dependencies.
+    • Reliable performance on Windows 10 and Windows 11.
+    • Ideal for instructor tools that must run without installation.
+
+Why CopyFromScreen:
+    • Fast, reliable, and compatible with all display configurations.
+    • Avoids complexity of DirectX or WPF capture pipelines.
+    • Works consistently across DPI settings.
+
+Why WH_MOUSE_LL:
+    • Required for global scroll interception.
+    • Enables scroll-through behavior even when the magnifier overlays content.
+    • Allows zoom control without requiring focus.
+
+Why a Circular Reticle:
+    • Provides consistent visual focus regardless of background content.
+    • Avoids the rectangular “boxy” feel of traditional magnifiers.
+    • Works well with adaptive contrast sampling.
+
+Why No External Dependencies:
+    • Ensures the tool can be distributed as a single EXE.
+    • Eliminates installation steps for instructors.
+    • Improves reliability in locked-down enterprise environments.
+
+---------------------------------------
+Known Issues
+---------------------------------------
+
+    • Scroll-through behavior requires administrator elevation for certain
+      system tools and installers.
+    • Extremely rapid cursor movement may cause brief reticle desynchronization
+      before the next capture frame.
+    • Multi-monitor setups with mixed DPI scaling may show slight differences
+      in reticle thickness due to GDI+ rounding.
+    • Windows Magnifier or other overlay tools may interfere with WH_MOUSE_LL
+      if active simultaneously.
+
+---------------------------------------
+Future Features
+---------------------------------------
+
+    • Configurable reticle thickness and color options.
+    • Optional rectangular magnifier mode for accessibility use cases.
+    • Hotkey-based repositioning (e.g., snap to top-left, top-right).
+    • Instructor “highlight mode” that temporarily increases reticle brightness.
+    • Optional logging for debugging movement and capture behavior.
+    • Auto-hide banner after a configurable timeout.
+    • Multi-profile configuration system for different teaching environments.
+
+---------------------------------------
+Version Notes
+---------------------------------------
+
+This Developer Deeper Dive corresponds to Version 2.0.0 of CursorMagnifier,
+which includes the updated circular reticle ring, stable capture logic, and
+verified Run-as-Administrator behavior.

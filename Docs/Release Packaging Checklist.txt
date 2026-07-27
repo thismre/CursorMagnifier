@@ -1,0 +1,33 @@
+CursorMagnifier – Release Packaging Checklist
+---------------------------------------------
+
+Before creating a new distribution ZIP, verify the following:
+
+Build:
+    • Build configuration set to Release.
+    • Solution builds without warnings or errors.
+    • CursorMagnifier.exe and CursorMagnifier.exe.config are present.
+
+Versioning:
+    • VERSION.txt updated to the correct version number.
+    • changelog.txt updated with newest version at the top.
+    • README.md and README.txt updated to reflect new features.
+
+Documentation:
+    • Installation Instructions.txt reviewed for accuracy.
+    • README-Source.txt updated if internal logic changed.
+    • Developer Deeper Dive.txt updated for architectural changes.
+    • Troubleshooting.txt updated if new issues were discovered.
+    • Support.txt contains current contact information.
+    • LICENSE.txt included.
+
+Shortcuts:
+    • “Run CursorMagnifier (Admin).lnk” tested and confirmed to launch with elevation.
+    • Shortcut points to the correct EXE location.
+
+Final Packaging:
+    • All files placed in the distribution folder.
+    • Optional: Documentation placed in a Docs subfolder for cleaner layout.
+    • ZIP archive created with the correct version number in the filename.
+
+This checklist ensures consistent, instructor-ready releases every time.
