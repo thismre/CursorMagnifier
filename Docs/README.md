@@ -1,5 +1,5 @@
 # CursorMagnifier  
-**Version 2.0.0**
+**Version 2.0.0.0**
 
 ## Overview
 CursorMagnifier is a lightweight instructional magnifier designed for trainers, presenters, and technical educators. It provides a clear, high‑visibility zoomed view of the area surrounding the mouse cursor, making demonstrations easier to follow in both classroom and remote training environments.
@@ -15,8 +15,9 @@ CursorMagnifier is a lightweight instructional magnifier designed for trainers, 
 - No installation required; runs on **.NET Framework 4.7.2**
 
 ## Controls
-- **F8** to exit the magnifier  
-- **Ctrl + Scroll** to zoom in or out  
+- **F8** toggles the magnifier overlay  
+- **Ctrl + Scroll** zooms in or out  
+- **Ctrl + F8** terminates the application  
 - The magnified view initially appears in the lower‑right corner of the active monitor  
   and moves to the opposite corner if the cursor gets too close.
 
@@ -26,6 +27,22 @@ CursorMagnifier is a lightweight instructional magnifier designed for trainers, 
 
 ## Recommended Usage
 Use the included **Run CursorMagnifier (Admin).lnk** shortcut for best behavior when interacting with elevated applications such as installers, system tools, and administrative consoles.
+
+---
+
+## Version History
+
+### **2.0.0.0 — Initial Release**
+- First public version of CursorMagnifier  
+- Smooth zoom control with **Ctrl + Scroll**  
+- Corner‑aware magnified view repositioning  
+- Adaptive reticle with dynamic contrast  
+- Updated circular reticle ring (5px, increased transparency)  
+- Stable capture logic without offset adjustments  
+- Instructional banner showing zoom level and admin status  
+- **F8** overlay toggle  
+- **Ctrl + F8** application termination  
+- Optional Run‑as‑Administrator mode for full scroll‑through support  
 
 ---
 
