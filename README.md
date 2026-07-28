@@ -1,7 +1,9 @@
-# CursorMagnifier  
+# CursorMagnifier
+[![Latest Release](https://img.shields.io/github/v/release/thismre/CursorMagnifier)](https://github.com/thismre/CursorMagnifier/releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/thismre/CursorMagnifier/total)](https://github.com/thismre/CursorMagnifier/releases/latest)
 **Version 2.0.0.0**
 
-## Download CursorMagnifier  
+## Download CursorMagnifier
 Always download the official Release build.  
 Do NOT use “Code → Download ZIP” — that ZIP contains source code only and will not run.
 
@@ -12,7 +14,7 @@ The Release ZIP contains the pre-built executable, ready to run on Windows.
 
 ---
 
-## Important  
+## Important
 The green "Code → Download ZIP" button downloads the source tree, not the application.  
 If you want to run CursorMagnifier, you must download the Release ZIP from the link above.
 
