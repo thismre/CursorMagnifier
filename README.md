@@ -8,7 +8,7 @@ Always download the official Release build.
 Do NOT use “Code → Download ZIP” — that ZIP contains source code only and will not run.
 
 Download the latest Release:  
-https://github.com/thismre/CursorMagnifier/releases/latest
+https://github.com/thismre/CursorMagnifier/releases/download/v2.0.0.0/CursorMagnifier_v2.0.0.0.zip
 
 The Release ZIP contains the pre-built executable, ready to run on Windows.
 
