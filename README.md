@@ -15,7 +15,7 @@ The Release ZIP contains the pre-built executable, ready to run on Windows.
 ---
 
 ## Important
-The green "Code → Download ZIP" button downloads the source tree, not the application.  
+The "Code → Download ZIP" button downloads the source tree, not the application.  
 If you want to run CursorMagnifier, you must download the Release ZIP from the link above.
 
 ### What’s the difference?
