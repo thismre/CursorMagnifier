@@ -1,6 +1,6 @@
 # CursorMagnifier
 [![Latest Release](https://img.shields.io/github/v/release/thismre/CursorMagnifier)](https://github.com/thismre/CursorMagnifier/releases/latest)
-[![Downloads](https://img.shields.io/github/downloads/thismre/CursorMagnifier/total)](https://github.com/thismre/CursorMagnifier/releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/thismre/CursorMagnifier/latest/total)](https://github.com/thismre/CursorMagnifier/releases/latest)
 **Version 2.0.0.0**
 
 ## Download CursorMagnifier
